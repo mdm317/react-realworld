@@ -7,7 +7,9 @@ export const getArticleListRequestAction = () => {
     type: types.GET_ARTICLE_LIST_REQUEST,
   } as const;
 };
-export const getArticleListSuccessAction = (articleList: [Article]) => {
+export const getArticleListSuccessAction = (
+  articleList: [Article]
+) => {
   return {
     type: types.GET_ARTICLE_LIST_SUCCESS,
     payload: articleList,
