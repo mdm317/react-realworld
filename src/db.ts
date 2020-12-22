@@ -1,5 +1,4 @@
 export const url = "https://conduit.productionready.io/api";
-
 export interface Article {
   slug: string;
   title: string;
@@ -16,4 +15,16 @@ export interface Article {
     image: string;
     following: boolean;
   };
+}
+export interface User {
+  id: string;
+  createdAt: string;
+  updatedAt: string;
+  email: string;
+  username: string;
+  bio: string;
+  image: boolean;
+}
+export interface LoginUser extends User {
+  token: string;
 }

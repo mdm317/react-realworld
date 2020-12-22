@@ -1,6 +1,5 @@
 import * as types from "./types";
 import { Article } from "../../db";
-
 interface ArticleState {
   articleList: [Article] | null;
   articleDetail: Article | null;
